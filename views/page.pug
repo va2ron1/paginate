@@ -1,0 +1,4 @@
+if page.isCurrent
+	a.item(class=page.isCurrent ? 'active' : undefined) #{page.page}
+else
+	a(href='#{baseUrl}?page=#{page.page}') #{page.page}
