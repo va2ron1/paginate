@@ -1,8 +1,8 @@
 {
   "name": "paginate",
-  "description": "Pagination. Especially useful with Mongoose + Express/Jade.",
+  "description": "Pagination. Especially useful with Mongoose + Express/pug.",
   "version": "0.2.0",
-  "homepage": "https://github.com/tonymilne/paginate",
+  "homepage": "https://github.com/nhanco/paginate",
   "author": {
     "name": "Tony Milne",
     "url": "http://tonymilne.com.au"
