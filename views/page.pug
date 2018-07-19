@@ -1,5 +1,5 @@
-li(class=page.isCurrent ? 'active' : undefined)
+div(class=page.isCurrent ? 'active' : undefined)
 	if page.isCurrent
-		a #{page.page}
+		a.item #{page.page}
 	else
-		a(href='#{baseUrl}?page=#{page.page}') #{page.page}
+		a.item(href='#{baseUrl}?page=#{page.page}') #{page.page}
