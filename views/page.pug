@@ -1,6 +1,5 @@
-if page.isCurrent
-	li.page-item.active
-		a.page-link(class=page.isCurrent ? 'active' : undefined) #{page.page}
-else
-	li.page-item
-		a.page-link(href='#{baseUrl}?page=#{page.page}') #{page.page}
+li(class=page.isCurrent ? 'active' : undefined)
+	if page.isCurrent
+		a #{page.page}
+	else
+		a(href='#{baseUrl}?page=#{page.page}') #{page.page}
