@@ -1,5 +1,5 @@
 div(class=page.isCurrent ? 'active' : undefined)
 	if page.isCurrent
-		a.item #{page.page}
+		a.page-link.active #{page.page}
 	else
-		a.item(href='#{baseUrl}?page=#{page.page}') #{page.page}
+		a.page-link(href=baseUrl+'?page='+page.page) #{page.page}
