@@ -56,7 +56,7 @@ app.get('/posts', function(req, res, next) {
 ```
 
 Then in the posts/index template, you could include the html generated from posts.pagination.render().
-E.g. in Jade, this might look like:
+E.g. in pug, this might look like:
 ```
 != posts.pagination.render({ baseUrl: '/posts })
 ```

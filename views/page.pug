@@ -1,0 +1,5 @@
+div(class=page.isCurrent ? 'active' : undefined)
+	if page.isCurrent
+		a.page-link.active #{page.page}
+	else
+		a.page-link(href=baseUrl+'?page='+page.page) #{page.page}
