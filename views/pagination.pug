@@ -1,6 +1,6 @@
 nav.pagination
-	if currentPage && currentPage.previousPage
-		include previous
+
+	include previous
 
 	each page, i in pages
 		if page.inLeftOuter || page.inInner || page.inRightOuter
@@ -8,5 +8,4 @@ nav.pagination
 		else if !page.previousPage.isSeparator
 			include separator
 
-	if currentPage && currentPage.nextPage
-		include next
+	include next

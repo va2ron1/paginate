@@ -1,2 +1,6 @@
-li.page-item
-	a.page-link(href=baseUrl+"?page="+currentPage.previousPage.page) #{previousText}
+if currentPage && currentPage.previousPage
+	li.page-item
+		a.page-link(href=baseUrl+"?page="+currentPage.previousPage.page) #{previousText}
+else
+	li.page-item.disabled
+		a.page-link(href="#", aria-disabled="true") #{previousText}
